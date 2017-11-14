@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "techfusionclub",
+  "launch_path": "/index.html",
+  "description": " ",
+  "icons": {
+    "128": "/images/touch/icon-128.png"
+  },
+  "developer": {
+    "name": "Web Team",
+    "url": "https://github.com/techfusionclub"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "techfusionclub",
+      "description": " "
+    }
+  }
+}

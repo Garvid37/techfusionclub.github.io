@@ -1,0 +1,31 @@
+{
+  "name": "techfusionclub",
+  "version": "1.0",
+  "description": " ",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:techfusionclub/techfusionclub.github.io.git"
+  },
+  "author": "Web Team | TechFusion Club",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "cross-spawn": "^5.1.0",
+    "gulp": "^3.9.1"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "vuejs",
+    "reactjs",
+    "angularjs",
+    "pug",
+    "sass",
+    "browsersync"
+  ],
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
