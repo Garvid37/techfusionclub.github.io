@@ -1,0 +1,33 @@
+*{
+ box-sizing: border-box;
+}
+
+html, body{
+ font-family: 'roboto', sans-serif;
+}
+
+a{
+ color: #22292C;
+ text-decoration: none;
+
+ a:hover{
+  color: #1A1F21;
+ }
+}
+
+img{
+ position: relative;
+ width: 100%;
+}
+
+.flex{
+ display: flex;
+}
+
+.flex-col{
+ flex-direction: column;
+}
+
+.tf-gradient{
+ background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}

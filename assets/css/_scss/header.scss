@@ -1,0 +1,262 @@
+.tf-header{
+ justify-content: space-between;
+ align-content: center;
+ align-items: center;
+ width: 100%;
+ height: 80px;
+ padding: 8px 42px;
+ background-color: #1A1F21;
+ z-index: 9;
+
+ @media (min-width: 1720px){
+  height: 160px;
+  padding: 8px 82px;
+ }
+
+ @media (max-width: 900px){
+  padding: 8px 24px;
+ }
+
+ @media (max-width: 580px){
+  height: 70px;
+  padding: 8px 18px;
+ }
+
+ .tf-logo-package{
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+
+  .tf-logo{
+   flex: 1;
+   width: 80px;
+   margin-right: 18px;
+
+   @media (min-width: 1720px){
+    width: 120px;
+    margin-right: 38px;
+   }
+
+   @media (max-width: 900px){
+    margin-right: 12px;
+   }
+
+   @media (max-width: 580px){
+    width: 60px;
+   }
+  }
+
+  .tf-logo-name{
+   flex: 2;
+   color: #ffffff;
+   font-size: 18px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+
+   @media (min-width: 1720px){
+    font-size: 36px;
+    letter-spacing: 3px;
+   }
+
+   @media (max-width: 580px){
+    font-size: 14px;
+   }
+  }
+ }
+
+ .tf-nav-links{
+
+  @media (max-width: 900px){
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: none;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: flex-end;
+   padding: 0 18px 124px 0;
+   background-color: rgba(26,31,33,0.4);
+   transition: all 0.3s ease-in-out;
+   z-index: -1;
+   opacity: 0;
+
+   &.tf-nav-active{
+    display: flex;
+   }
+  }
+
+  .tf-nav-link{
+   position: relative;
+   display: inline-block;
+   margin: 0 24px;
+   padding: 12px 6px;
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+
+   @media (min-width: 1720px){
+    margin: 0 48px;
+    padding: 24px 12px;
+    font-size: 28px;
+    letter-spacing: 3px;
+   }
+
+   @media (max-width: 900px){
+    font-size: 18px;
+    margin: 6px 24px;
+   }
+
+   .tf-nav-link-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform-origin: center;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+
+    @media (min-width: 1720px){
+     height: 4px;
+    }
+   }
+
+   &:hover{
+    .tf-nav-link-line{
+     transform: scale(1);
+    }
+   }
+  }
+ }
+
+ .tf-cta{
+  position: relative;
+  display: inline-block;
+  padding: 16px 42px;
+  border-radius: 4px;
+  z-index: 1;
+
+  @media (min-width: 1720px){
+   padding: 32px 84px;
+   border-radius: 8px;
+  }
+
+  @media (max-width: 900px){
+   padding: 12px 24px;
+   border-radius: 4px;
+  }
+
+  @media (max-width: 580px){
+   padding: 8px 18px;
+  }
+
+  .tf-cta-bg{
+   display: block;
+   position: absolute;
+   top: 2px;
+   left: 2px;
+   right: 2px;
+   bottom: 2px;
+   background: #1A1F21;
+   z-index: -1;
+
+   @media (min-width: 1720px){
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+   }
+  }
+
+  .tf-cta-text{
+   display: inline-block;
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1.5px;
+
+   @media (min-width: 1720px){
+    font-size: 28px;
+    letter-spacing: 3px;
+   }
+
+   @media (max-width: 580px){
+    font-size: 12px;
+   }
+  }
+ }
+}
+
+.tf-mob-nav{
+
+ @media (min-width: 900px){
+  display: none;
+ }
+
+ .tf-mob-nav-fab{
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+  .tf-mob-nav-trigger{
+   position: relative;
+   display: block;
+   width: 24px;
+   height: 2px;
+   background-color: #ffffff;
+   border-radius: 1.5px;
+   transition: 0.2s all ease-in-out;
+
+   &::before, &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 1.5px;
+    transition: 0.2s all ease-in-out;
+    transform-origin: center;
+   }
+
+   &::before{
+    top: -7px;
+   }
+
+   &::after{
+    top: 7px;
+   }
+  }
+
+  &.active{
+
+   .tf-mob-nav-trigger{
+    background-color: transparent;
+
+    &::before, &::after{
+     top: 0;
+    }
+
+    &::before{
+     transform: rotate(-45deg);
+    }
+
+    &::after{
+     transform: rotate(45deg);
+    }
+   }
+  }
+ }
+}
