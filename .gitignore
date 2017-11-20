@@ -110,3 +110,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/sas,node,bower,jekyll,windows,prepros
+assets/css/_scss/main.scss

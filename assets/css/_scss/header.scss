@@ -81,7 +81,7 @@
    padding: 0 18px 124px 0;
    background-color: rgba(26,31,33,0.4);
    transition: all 0.3s ease-in-out;
-   z-index: -1;
+   z-index: 99;
    opacity: 0;
 
    &.tf-nav-active{
@@ -209,6 +209,7 @@
   height: 60px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 99;
 
   .tf-mob-nav-trigger{
    position: relative;
@@ -217,7 +218,7 @@
    height: 2px;
    background-color: #ffffff;
    border-radius: 1.5px;
-   transition: 0.2s all ease-in-out;
+   transition: 0.4s all ease-in-out;
 
    &::before, &::after{
     content: '';
@@ -227,7 +228,7 @@
     height: 2px;
     background-color: #ffffff;
     border-radius: 1.5px;
-    transition: 0.2s all ease-in-out;
+    transition: 0.4s all ease-in-out;
     transform-origin: center;
    }
 
