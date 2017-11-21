@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: TechFusion Club
-email: shrey.binary@gmail.com
+email: techfusionclub@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "/" # shreyansh-portfolio the subpath of your site, e.g. /blog
@@ -44,3 +44,4 @@ exclude: [
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
