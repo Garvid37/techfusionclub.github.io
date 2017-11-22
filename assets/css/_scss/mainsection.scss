@@ -5,11 +5,12 @@
     }
     @media (max-width: 580px){
           font-size: 18px;
-          
+
  }
 
 }
 .mainseccontainer{
+ opacity: 1;
     padding:0px 148px;
     background-color:#1A1F21;
       @media (min-width: 1700px){
@@ -21,7 +22,7 @@
      @media (max-width: 580px){
           padding: 0px 24px;
  }
-     
+
 }
 .mainsec-box{
     width:100%;
@@ -59,52 +60,52 @@
 .icon{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     transition:all 0.6s ease-in-out;
-        
+
 }
 .icon:hover{
     background-color: #22292C;
 }
 .texts{
-    
+
     flex: 3;
     font-size: 20px;
     color:#343E42;
     font-weight: 900;
           @media (min-width: 1720px){
-        font-size: 40px;     
+        font-size: 40px;
     } @media (max-width: 900px){
           font-size: 18px;
  }
-    
+
     @media (max-width: 580px){
           font-size: 12px;
  }
-  
+
 }
 .text{
     flex: 3;
     font-size: 20px;
     color:#F2F2F2;
           @media (min-width: 1720px){
-        font-size: 40px;     
-    } 
+        font-size: 40px;
+    }
     @media (max-width: 900px){
           font-size: 15px;
 
  }
     @media (max-width: 580px){
           font-size: 12px;
-         
+
  }
      @media (max-width: 380px){
           font-size: 12px;
           padding: 0px 14px;
- } 
+ }
 }
 .more{
-    border:1px solid #22292C;   
+    border:1px solid #22292C;
     color: #343E42;
     padding: 10px 35px;
       @media (min-width: 1700px){
@@ -115,23 +116,23 @@
           font-size: 10px;
           padding: 7px 18px;
  }
-   
+
 }
 .date{
     font-size: 14px;
     flex:1;
     color: #343E42;
-    
+
         @media (min-width: 1720px){
               font-size: 30px;
     }
      @media (max-width: 900px){
           font-size: 14px;
-          
+
  }
     @media (max-width: 580px){
           font-size: 9px;
-        
+
  }
 }
 .mainsecicon{
@@ -143,4 +144,8 @@
 .more:hover{
     color:#22292C;
     background-color: #343E42;
-}   
+}
+
+.tf-tabs-c{
+ display: none;
+}

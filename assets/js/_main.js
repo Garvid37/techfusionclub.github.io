@@ -1,10 +1,11 @@
 // @prepros-prepend velocity.js
 // @prepros-prepend velocity.ui.js
+//@prepros-append tabs.js
 
 var tfNav = document.getElementById("tf-nav");
 var tfMobNav = document.getElementById("tf-mob-nav");
 var tfNavLinks = document.getElementsByClassName("tf-nav-link");
- var mobNavFlag = false;
+var mobNavFlag = false;
 
 tfMobNav.addEventListener('click', mobNav);
 
