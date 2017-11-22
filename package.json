@@ -11,9 +11,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "cross-spawn": "^5.1.0",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.13"
   },
   "keywords": [
     "jekyll",
@@ -26,6 +24,8 @@
     "browsersync"
   ],
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "gulp": "^3.9.1",
+    "normalize.css": "^7.0.0",
+    "cross-spawn": "^5.1.0"
   }
 }
