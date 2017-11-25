@@ -17,4 +17,6 @@ function tfTabLink() {
  this.classList.add("tf-gradient");
  document.getElementById(this.getAttribute('data-tab')).classList.remove("tf-tabs-c");
 
+ colorMadness(this);
+
 }

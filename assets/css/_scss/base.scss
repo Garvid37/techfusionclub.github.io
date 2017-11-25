@@ -1,3 +1,10 @@
+$bg-p : #070707;
+$bg-s : #0d0f10;
+$fg-p : #ffffff;
+$fg-s : #444d50;
+$fg-t : #32393c;
+$fg-hover : #9E9E9E;
+
 *,
 *::after,
 *::before {
@@ -6,16 +13,16 @@
 }
 
 html, body{
- font-family: 'roboto', sans-serif;
+ font-family: 'Cairo', sans-serif;
 	font-size: 100%;
 }
 
 a{
- color: #22292C;
+ color: $bg-p;
  text-decoration: none;
 
  a:hover{
-  color: #1A1F21;
+  color: $bg-s;
  }
 }
 
@@ -34,4 +41,9 @@ img{
 
 .tf-gradient{
  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+}
+
+.material-custom{
+	display: inline-block;
+	color: $fg-p;
 }
