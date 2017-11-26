@@ -3,7 +3,7 @@ var spawn = require('cross-spawn');
 var browserSync = require('browser-sync');
 
 gulp.task('jekyll-serve', function() {
- return spawn('jekyll', ['serve'], { stdio: 'inherit' });
+ return spawn('bundle', ['exec','jekyll','serve'], { stdio: 'inherit' });
 });
 
 /*
