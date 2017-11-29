@@ -1,0 +1,23 @@
+<div id="showcase" class="">
+
+  <div class="tf-showcase">
+
+    {% for project in site.data.showcase %}
+
+    <div class="flex tf-project-wrap {{ project.theme }}" style="
+    background-color: #{{ project.bg }};">
+     <div class="flex tf-project">
+      <div class="tf-project-info">
+       <div class="tf-project-team">{{ project.team }}</div>
+       <div class="tf-project-title">{{ project.title }}</div>
+      </div>
+
+      <a href="#" class="tf-project-cta light">Go to {{ project.title }} case study</a>
+     </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+</div>

@@ -36,19 +36,19 @@ var getSiblings = function (elem) {
 };
 
 var tfGradients = {
- updates : "linear-gradient(90deg, #1488CC 0%, #2B32B2 100%)",
- showcase : "linear-gradient(90deg, #F2994A 0%, #F2C94C 100%)",
- competition : "linear-gradient(90deg, #9C27B0 0%, #E91E63 100%)",
- teams : "linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%)",
- techveda : "linear-gradient(90deg, #607D8B 0%, #9E9E9E 100%)"
+ updates : "linear-gradient(to right, #0575e6, #021b79)",
+ showcase : "linear-gradient(to right, #ffb347, #ffcc33)",
+ competition : "linear-gradient(to right, #fc466b, #3f5efb)",
+ teams : "linear-gradient(to right, #00b09b, #96c93d)",
+ techveda : "linear-gradient(to right, #f85032, #e73827)"
 };
 
 var tfColors = {
- updates : "#2B32B2",
- showcase : "#F2994A",
- competition : "#9C27B0",
- teams : "#8BC34A",
- techveda : "#607D8B"
+ updates : "#021b79",
+ showcase : "#ffcc33",
+ competition : "#fc466b",
+ teams : "#96c93d",
+ techveda : "#e73827"
 };
 
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
