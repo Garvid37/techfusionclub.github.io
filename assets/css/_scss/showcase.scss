@@ -109,7 +109,8 @@
    }
 
    &.dark{
-    color: $bg-p;
+    color: $bg-s;
+    border: 1px solid $bg-s;
    }
   }
  }

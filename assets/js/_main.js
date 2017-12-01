@@ -1,5 +1,6 @@
 // @prepros-prepend velocity.js
 // @prepros-prepend velocity.ui.js
+// @prepros-prepend typed.js
 //@prepros-append tabs.js
 
 var tfNav = document.getElementById("tf-nav");
@@ -67,3 +68,13 @@ function colorMadness(tfShit) {
   target[i].style.background = " " + tfGradients[tfChange];
  }
 }
+
+var typed = new Typed(".tf-hero-text-alter", {
+  strings : ["We are <b>geeks</b>.", "We are <b>nerds</b>.", "We are tech <b>enthusiasts</b>.", "We are solution to many problems.", "We are <b>TechFusion</b>."],
+  typeSpeed: 50,
+	contentType: 'html',
+	loop: true,
+  fadeOut: true,
+	backDelay: 2000,
+  startDelay: 2000,
+});

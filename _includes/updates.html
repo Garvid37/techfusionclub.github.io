@@ -1,50 +1,46 @@
 <div id="updates" class="tf-updates">
 
- <div class="flex tf-update-title-wrap">
-  <span class="tf-update-dummy"></span>
-  <span class="tf-update-title">
+    <div class="flex tf-update-title-wrap">
+        <span class="tf-update-dummy"></span>
+        <span class="tf-update-title">
    Latest Updates
   </span>
- </div>
+    </div>
 
- {% for update in site.data.updates %}
-
- {% if update.cta %}
- <div class="tf-update-block-info">
-  <a href="{{ update.link }}" class="flex tf-update-block">
-   <span class="tf-update-block-date">
+    {% for update in site.data.updates %} {% if update.cta %}
+    <div class="tf-update-block-info">
+        <a href="{{ update.link }}" class="flex tf-update-block">
+            <span class="tf-update-block-date">
     {{ update.date }}
    </span>
-   <span class="tf-update-block-title">
+            <span class="tf-update-block-title">
     {{ update.title }}
    </span>
-  </a>
-  <a href="{{ update.cta }}" class="tf-update-block-cta">
-   <i class="material-icons material-custom">launch</i>
-  </a>
- </div>
+        </a>
+        <a href="{{ update.cta }}" class="tf-update-block-cta">
+            <i class="material-icons material-custom">launch</i>
+        </a>
+    </div>
 
- {% else %}
+    {% else %}
 
- <a href="{{ update.link }}" class="flex tf-update-block">
-  <span class="tf-update-block-date">
+    <a href="{{ update.link }}" class="flex tf-update-block">
+        <span class="tf-update-block-date">
    {{ update.date }}
   </span>
-  <span class="tf-update-block-title">
+        <span class="tf-update-block-title">
    {{ update.title }}
   </span>
- </a>
+    </a>
 
- {% endif %}
+    {% endif %} {% endfor %}
 
- {% endfor %}
-
- <div class="flex tf-update-cta-wrap tf-update-title-wrap">
-  <span class="tf-update-dummy"></span>
-  <a href="#" class="tf-update-title">
+    <div class="flex tf-update-cta-wrap tf-update-title-wrap">
+        <span class="tf-update-dummy"></span>
+        <a href="#" class="tf-update-title">
    more
   </a>
- </div>
+    </div>
 
 </div>
 
